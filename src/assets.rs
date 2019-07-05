@@ -1,6 +1,7 @@
 use coffee::graphics::Rectangle;
 use serde::Deserialize;
 use serde_json;
+use std::borrow::Cow;
 use std::collections::HashMap;
 use std::fs::File;
 use std::io;
@@ -23,12 +24,13 @@ struct TextureAtlas {
     items: Vec<SubTexture>,
 }
 
-pub struct Assets {
-    pub offsets: HashMap<String, Rectangle<u16>>,
+pub struct Assets<'a> {
+    pub offsets: HashMap<Cow<'a, str>, Rectangle<u16>>,
     pub default_offset: Rectangle<u16>,
 }
-impl Assets {
-    pub fn load() -> Result<Self, Error> {
+
+impl<'a> Assets<'a> {
+    pub fn load() -> Result<Assets<'a>, Error> {
         let file = File::open("assets/tiles.json")?;
         let reader = io::BufReader::new(file);
         let foo: TextureAtlas = serde_json::from_reader(reader)?;
@@ -38,7 +40,7 @@ impl Assets {
                 .iter()
                 .map(|st| {
                     (
-                        st.name.to_string(),
+                        Cow::Owned(st.name.clone()),
                         Rectangle {
                             x: st.x,
                             y: st.y,

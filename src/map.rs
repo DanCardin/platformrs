@@ -3,34 +3,42 @@ use coffee::graphics::{Point, Rectangle};
 use itertools::iproduct;
 use serde::{Deserialize, Serialize};
 use serde_json;
+use std::borrow::Cow;
 use std::fs::File;
 use std::io;
 use std::path::Path;
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
-pub struct Cell {
-    pub asset_name: String,
+pub struct Cell<'a> {
+    pub asset_name: Cow<'a, str>,
+}
+
+impl<'a> Cell<'a> {
+    pub fn new<S>(asset_name: S) -> Self
+    where
+        S: Into<Cow<'a, str>>,
+    {
+        Self {
+            asset_name: asset_name.into(),
+        }
+    }
 }
 
 #[derive(Serialize, Deserialize, Debug)]
-pub struct Map {
-    cells: Vec<Cell>,
+pub struct Map<'a> {
+    cells: Vec<Cell<'a>>,
     pub width: u16,
     pub height: u16,
     tilesize: u16,
 }
 
-impl Default for Map {
-    fn default() -> Self {
+impl<'a> Default for Map<'a> {
+    fn default() -> Map<'a> {
         let width = 30;
         let height = 15;
         let mut cells = Vec::new();
-        let wall = Cell {
-            asset_name: "box".to_string(),
-        };
-        let empty = Cell {
-            asset_name: "dirtCenter".to_string(),
-        };
+        let wall = Cell::new("box");
+        let empty = Cell::new("dirtCenter");
         for _ in 0..width {
             cells.push(wall.clone());
         }
@@ -53,7 +61,7 @@ impl Default for Map {
     }
 }
 
-impl Map {
+impl<'a> Map<'a> {
     pub fn load() -> Self {
         let path = Path::new("assets/map.map");
         if !path.exists() {
@@ -67,7 +75,7 @@ impl Map {
         serde_json::from_reader(reader).unwrap()
     }
 
-    pub fn iter<'a>(&'a self) -> IterMap<'a> {
+    pub fn iter(&'a self) -> IterMap<'a> {
         IterMap {
             map: self,
             index: 0,
@@ -92,8 +100,8 @@ impl Map {
         iproduct!(minx..maxx, miny..maxy)
             .map(|(x, y)| {
                 Point::new(
-                    (x as u16 * self.tilesize) as f32,
-                    (y as u16 * self.tilesize) as f32,
+                    x as f32 * self.tilesize as f32,
+                    y as f32 * self.tilesize as f32,
                 )
             })
             .collect()
@@ -101,12 +109,12 @@ impl Map {
 }
 
 pub struct IterMap<'a> {
-    map: &'a Map,
+    map: &'a Map<'a>,
     index: usize,
 }
 
 impl<'a> Iterator for IterMap<'a> {
-    type Item = (u16, u16, &'a Cell);
+    type Item = (u16, u16, &'a Cell<'a>);
 
     fn next(&mut self) -> Option<Self::Item> {
         if self.index == self.map.cells.len() {

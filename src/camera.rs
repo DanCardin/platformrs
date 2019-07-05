@@ -27,7 +27,7 @@ impl Camera {
         self
     }
 
-    pub fn get_transform(self: &mut Self, target: Option<&Rectangle<i16>>) -> Transformation {
+    fn get_offset(self: &Self, target: Option<&Rectangle<i16>>) -> (i16, i16) {
         let mut x = self.area.x;
         let mut y = self.area.y;
 
@@ -84,6 +84,19 @@ impl Camera {
                 }
             }
         }
+
+        (x, y)
+    }
+
+    pub fn get_transform(self: &Self, target: Option<&Rectangle<i16>>) -> Transformation {
+        let (x, y) = self.get_offset(target);
+        Transformation::identity()
+            * Transformation::scale(self.zoom)
+            * Transformation::translate(Vector::new(-1.0 * x as f32, -1.0 * y as f32))
+    }
+
+    pub fn update(self: &mut Self, target: Option<&Rectangle<i16>>) -> Transformation {
+        let (x, y) = self.get_offset(target);
 
         self.area.x = x;
         self.area.y = y;

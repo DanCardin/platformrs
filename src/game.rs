@@ -3,6 +3,9 @@ use coffee::input::{keyboard, KeyboardAndMouse};
 use coffee::load::loading_screen::ProgressBar;
 use coffee::load::Join;
 use coffee::load::Task;
+use coffee::Debug;
+use std::borrow::Cow;
+use std::collections::HashMap;
 
 use crate::assets::Assets;
 use crate::camera::Camera;
@@ -10,21 +13,67 @@ use crate::config::Config;
 use crate::map::Map;
 use coffee::Game;
 
-pub struct Platformrs {
-    assets: Assets,
-    map: Map,
-    config: Config,
-    camera: Camera,
-    pos: Point,
-    batch: Batch,
-    palette: Image,
+struct Object<'a> {
+    pub pos: Point,
+    pub asset_name: Option<Cow<'a, str>>,
+    pub visible: bool,
 }
 
-impl Game for Platformrs {
+impl<'a> Object<'a> {
+    pub fn new() -> Self {
+        Self {
+            pos: Point::new(0.0, 0.0),
+            asset_name: None,
+            visible: true,
+        }
+    }
+
+    pub fn move_to(mut self, pos: Point) -> Object<'a> {
+        self.pos = pos;
+        self
+    }
+
+    pub fn with_asset<S>(mut self, asset_name: S) -> Object<'a>
+    where
+        S: Into<Cow<'a, str>>,
+    {
+        self.asset_name = Some(asset_name.into());
+        self
+    }
+
+    pub fn hide(mut self) -> Object<'a> {
+        self.visible = false;
+        self
+    }
+}
+
+pub struct Platformrs<'a> {
+    assets: Assets<'a>,
+    map: Map<'a>,
+    config: Config,
+    camera: Camera,
+    batch: Batch,
+    debug_sheet: Image,
+    input: Option<Input>,
+    objects: HashMap<Cow<'a, str>, Object<'a>>,
+}
+
+enum Movement {
+    Left,
+    Right,
+}
+
+struct Input {
+    movement: Option<Movement>,
+    jumping: bool,
+    crouched: bool,
+}
+
+impl<'a> Game for Platformrs<'a> {
     type Input = KeyboardAndMouse;
     type LoadingScreen = ProgressBar;
 
-    fn load(_window: &Window) -> Task<Platformrs> {
+    fn load(_window: &Window) -> Task<Platformrs<'a>> {
         (
             Task::stage(
                 "Loading assets...",
@@ -37,13 +86,11 @@ impl Game for Platformrs {
             ),
             Task::stage(
                 "Loading image",
-                Task::using_gpu(|mut gpu| {
-                    Image::from_colors(&mut gpu, &[Color::from_rgb(255, 0, 0)])
-                }),
+                Task::using_gpu(|mut gpu| Image::new(&mut gpu, "assets/debug.png")),
             ),
         )
             .join()
-            .map(|(assets, map, spritesheet, palette)| {
+            .map(|(assets, map, spritesheet, debug_sheet)| {
                 let config = Config::new();
                 let camera = Camera::new(Rectangle {
                     x: 0,
@@ -57,52 +104,79 @@ impl Game for Platformrs {
                     width: (map.width * config.tilesize) as i16,
                     height: (map.height * config.tilesize) as i16,
                 });
+
+                let mut objects = HashMap::new();
+                objects.insert("player".into(), Object::new().with_asset("hillSmall"));
+
                 Platformrs {
-                    assets: assets,
+                    assets,
                     map,
-                    config: config,
-                    camera: camera,
-                    pos: Point::new(0.0, 0.0),
+                    config,
+                    camera,
+                    objects,
+                    debug_sheet,
                     batch: Batch::new(spritesheet),
-                    palette,
+                    input: None,
                 }
             })
     }
 
     fn interact(&mut self, input: &mut KeyboardAndMouse, _window: &mut Window) {
-        let speed = 5.0;
-        if input.is_key_pressed(keyboard::KeyCode::D) {
-            self.pos.x += speed;
-        }
+        let mut movement = None;
         if input.is_key_pressed(keyboard::KeyCode::A) {
-            self.pos.x -= speed;
+            movement = Some(Movement::Left);
         }
+        if input.is_key_pressed(keyboard::KeyCode::D) {
+            movement = Some(Movement::Right);
+        }
+
+        let mut jumping = false;
         if input.is_key_pressed(keyboard::KeyCode::W) {
-            self.pos.y -= speed;
+            jumping = true;
         }
+
+        let mut crouched = false;
         if input.is_key_pressed(keyboard::KeyCode::S) {
-            self.pos.y += speed;
+            crouched = true;
         }
+        self.input = Some(Input {
+            movement,
+            jumping,
+            crouched,
+        })
     }
 
     fn update(&mut self, _window: &Window) {
-        //
+        let speed = 5.0;
+
+        let player = self.objects.get_mut("player").unwrap();
+        if let Some(input) = &self.input {
+            match input.movement {
+                Some(Movement::Left) => {
+                    player.pos.x -= speed;
+                }
+                Some(Movement::Right) => {
+                    player.pos.x += speed;
+                }
+                _ => {}
+            }
+
+            if input.jumping {
+                player.pos.y -= speed;
+            } else if input.crouched {
+                player.pos.y += speed;
+            }
+        }
     }
 
     fn draw(&mut self, frame: &mut Frame, _timer: &coffee::Timer) {
         frame.clear(Color::BLACK);
 
-        let target = self
-            .assets
-            .offsets
-            .get("hillSmall")
-            .unwrap_or(&self.assets.default_offset);
-
         for (x, y, cell) in self.map.iter() {
             let source = *self
                 .assets
                 .offsets
-                .get(&cell.asset_name)
+                .get(cell.asset_name.as_ref())
                 .unwrap_or(&self.assets.default_offset);
             self.batch.add(Sprite {
                 source,
@@ -113,55 +187,75 @@ impl Game for Platformrs {
                 scale: (self.config.scale, self.config.scale),
             });
         }
+
+        for object in self.objects.values() {
+            if let Some(asset_name) = &object.asset_name {
+                if let Some(offset) = self.assets.offsets.get(asset_name) {
+                    self.batch.add(Sprite {
+                        source: *offset,
+                        position: Point::new(object.pos.x as f32, object.pos.y as f32),
+                        scale: (1.0, 1.0),
+                    });
+                }
+            }
+        }
+
+        let default = Object::new();
+        let object = self.objects.get("player").unwrap_or(&default);
+        let mut target = &self.assets.default_offset;
+        if let Some(asset_name) = &object.asset_name {
+            target = self.assets.offsets.get(asset_name).unwrap();
+        }
+
         self.batch.draw(
             &mut frame
                 .as_target()
-                .transform(self.camera.get_transform(Some(&Rectangle {
-                    x: self.pos.x as i16,
-                    y: self.pos.y as i16,
+                .transform(self.camera.update(Some(&Rectangle {
+                    x: object.pos.x as i16,
+                    y: object.pos.y as i16,
                     width: target.width as i16,
                     height: target.height as i16,
                 }))),
         );
+    }
+
+    fn debug(&self, _input: &Self::Input, frame: &mut Frame<'_>, debug: &mut Debug) {
+        let default = Object::new();
+        let object = self.objects.get("player").unwrap_or(&default);
+        let mut target = &self.assets.default_offset;
+        if let Some(asset_name) = &object.asset_name {
+            target = self.assets.offsets.get(asset_name).unwrap();
+        }
 
         for position in self.map.collidable_tiles(&Rectangle {
-            x: self.pos.x as i16,
-            y: self.pos.y as i16,
+            x: object.pos.x as i16,
+            y: object.pos.y as i16,
             width: target.width as i16,
             height: target.height as i16,
         }) {
-            self.palette.draw(
+            self.debug_sheet.draw(
                 Sprite {
                     source: Rectangle {
                         x: 0,
                         y: 0,
-                        width: 1,
-                        height: 1,
+                        width: 72,
+                        height: 72,
                     },
                     position,
-                    scale: (self.config.tilesize as f32, self.config.tilesize as f32),
+                    scale: (1.0, 1.0),
                 },
-                &mut frame.as_target(),
+                &mut frame
+                    .as_target()
+                    .transform(self.camera.get_transform(Some(&Rectangle {
+                        x: object.pos.x as i16,
+                        y: object.pos.y as i16,
+                        width: target.width as i16,
+                        height: target.height as i16,
+                    }))),
             );
         }
 
-        self.batch.clear();
-        self.batch.add(Sprite {
-            source: *target,
-            position: Point::new(self.pos.x as f32, self.pos.y as f32),
-            scale: (1.0, 1.0),
-        });
-
-        self.batch.draw(
-            &mut frame
-                .as_target()
-                .transform(self.camera.get_transform(Some(&Rectangle {
-                    x: self.pos.x as i16,
-                    y: self.pos.y as i16,
-                    width: target.width as i16,
-                    height: target.height as i16,
-                }))),
-        );
+        debug.draw(frame);
     }
 
     fn on_close_request(&mut self) -> bool {
