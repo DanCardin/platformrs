@@ -1,33 +1,29 @@
-use coffee::graphics::{Rectangle, Transformation, Vector};
+use crate::rect::Rect;
+use coffee::graphics::{Transformation, Vector};
 
 pub struct Camera {
-    area: Rectangle<i16>,
-    margin: Rectangle<i16>,
-    max_bounds: Option<Rectangle<i16>>,
+    area: Rect<f32>,
+    margin: Rect<f32>,
+    max_bounds: Option<Rect<f32>>,
     zoom: f32,
 }
 
 impl Camera {
-    pub fn new(rect: Rectangle<i16>) -> Self {
+    pub fn new(rect: Rect<f32>) -> Self {
         Self {
             area: rect,
-            margin: Rectangle {
-                x: 100,
-                y: 100,
-                width: 100,
-                height: 100,
-            },
+            margin: Rect::new(100.0, 100.0, 100.0, 100.0),
             max_bounds: None,
             zoom: 1.0,
         }
     }
 
-    pub fn with_bounds(mut self, rect: Rectangle<i16>) -> Self {
+    pub fn with_bounds(mut self, rect: Rect<f32>) -> Self {
         self.max_bounds = Some(rect);
         self
     }
 
-    fn get_offset(self: &Self, target: Option<&Rectangle<i16>>) -> (i16, i16) {
+    fn get_offset(self: &Self, target: Option<&Rect<f32>>) -> (f32, f32) {
         let mut x = self.area.x;
         let mut y = self.area.y;
 
@@ -64,9 +60,9 @@ impl Camera {
                 x = max_bounds.width - self.area.width;
             }
 
-            if (x < 0) && (x + self.area.width > max_bounds.width) {
+            if (x < 0.0) && (x + self.area.width > max_bounds.width) {
                 if let Some(target) = target {
-                    x = target.x + target.width / 2 - self.area.width / 2;
+                    x = target.x + target.width / 2.0 - self.area.width / 2.0;
                 }
             }
 
@@ -78,9 +74,9 @@ impl Camera {
                 y = max_bounds.height - self.area.height;
             }
 
-            if (y < 0) && (y + self.area.height > max_bounds.height) {
+            if (y < 0.0) && (y + self.area.height > max_bounds.height) {
                 if let Some(target) = target {
-                    y = target.y + target.height / 2 - self.area.height / 2;
+                    y = target.y + target.height / 2.0 - self.area.height / 2.0;
                 }
             }
         }
@@ -88,14 +84,14 @@ impl Camera {
         (x, y)
     }
 
-    pub fn get_transform(self: &Self, target: Option<&Rectangle<i16>>) -> Transformation {
+    pub fn get_transform(self: &Self, target: Option<&Rect<f32>>) -> Transformation {
         let (x, y) = self.get_offset(target);
         Transformation::identity()
             * Transformation::scale(self.zoom)
-            * Transformation::translate(Vector::new(-1.0 * x as f32, -1.0 * y as f32))
+            * Transformation::translate(Vector::new(-1.0 * x, -1.0 * y))
     }
 
-    pub fn update(self: &mut Self, target: Option<&Rectangle<i16>>) -> Transformation {
+    pub fn update(self: &mut Self, target: Option<&Rect<f32>>) -> Transformation {
         let (x, y) = self.get_offset(target);
 
         self.area.x = x;

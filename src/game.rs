@@ -11,41 +11,9 @@ use crate::assets::Assets;
 use crate::camera::Camera;
 use crate::config::Config;
 use crate::map::Map;
+use crate::object::Object;
+use crate::rect::Rect;
 use coffee::Game;
-
-struct Object<'a> {
-    pub pos: Point,
-    pub asset_name: Option<Cow<'a, str>>,
-    pub visible: bool,
-}
-
-impl<'a> Object<'a> {
-    pub fn new() -> Self {
-        Self {
-            pos: Point::new(0.0, 0.0),
-            asset_name: None,
-            visible: true,
-        }
-    }
-
-    pub fn move_to(mut self, pos: Point) -> Object<'a> {
-        self.pos = pos;
-        self
-    }
-
-    pub fn with_asset<S>(mut self, asset_name: S) -> Object<'a>
-    where
-        S: Into<Cow<'a, str>>,
-    {
-        self.asset_name = Some(asset_name.into());
-        self
-    }
-
-    pub fn hide(mut self) -> Object<'a> {
-        self.visible = false;
-        self
-    }
-}
 
 pub struct Platformrs<'a> {
     assets: Assets<'a>,
@@ -92,23 +60,21 @@ impl<'a> Game for Platformrs<'a> {
             .join()
             .map(|(assets, map, spritesheet, debug_sheet)| {
                 let config = Config::new();
-                let camera = Camera::new(Rectangle {
-                    x: 0,
-                    y: 0,
-                    width: config.screen_width as i16,
-                    height: config.screen_height as i16,
-                })
-                .with_bounds(Rectangle {
-                    x: 0,
-                    y: 0,
-                    width: (map.width * config.tilesize) as i16,
-                    height: (map.height * config.tilesize) as i16,
-                });
+                let camera = Camera::new(
+                    Rect::default().size(config.screen_width as f32, config.screen_height as f32),
+                )
+                .with_bounds(Rect::default().size(
+                    (map.width * config.tilesize) as f32,
+                    (map.height * config.tilesize) as f32,
+                ));
 
                 let mut objects = HashMap::new();
-                objects.insert("player".into(), Object::new().with_asset("hillSmall"));
+                objects.insert(
+                    "player".into(),
+                    Object::with_size(48.0, 106.0).with_asset("hillSmall"),
+                );
 
-                Platformrs {
+                Self {
                     assets,
                     map,
                     config,
@@ -153,20 +119,23 @@ impl<'a> Game for Platformrs<'a> {
         if let Some(input) = &self.input {
             match input.movement {
                 Some(Movement::Left) => {
-                    player.pos.x -= speed;
+                    player.rect.x -= speed;
                 }
                 Some(Movement::Right) => {
-                    player.pos.x += speed;
+                    player.rect.x += speed;
                 }
                 _ => {}
             }
 
             if input.jumping {
-                player.pos.y -= speed;
+                player.rect.y -= speed;
             } else if input.crouched {
-                player.pos.y += speed;
+                player.rect.y += speed;
             }
         }
+
+        // TODO: Move collision logic elsewhere
+        for cell in self.map.collidable_tiles(&player.rect) {}
     }
 
     fn draw(&mut self, frame: &mut Frame, _timer: &coffee::Timer) {
@@ -176,7 +145,7 @@ impl<'a> Game for Platformrs<'a> {
             let source = *self
                 .assets
                 .offsets
-                .get(cell.asset_name.as_ref())
+                .get(cell.get_name().unwrap_or(&Cow::Borrowed("")).as_ref())
                 .unwrap_or(&self.assets.default_offset);
             self.batch.add(Sprite {
                 source,
@@ -189,72 +158,74 @@ impl<'a> Game for Platformrs<'a> {
         }
 
         for object in self.objects.values() {
+            if !object.visible {
+                continue;
+            }
             if let Some(asset_name) = &object.asset_name {
                 if let Some(offset) = self.assets.offsets.get(asset_name) {
                     self.batch.add(Sprite {
                         source: *offset,
-                        position: Point::new(object.pos.x as f32, object.pos.y as f32),
+                        position: object.rect.point(),
                         scale: (1.0, 1.0),
                     });
                 }
             }
         }
 
-        let default = Object::new();
+        let default = Object::with_size(70.0, 70.0);
         let object = self.objects.get("player").unwrap_or(&default);
-        let mut target = &self.assets.default_offset;
-        if let Some(asset_name) = &object.asset_name {
-            target = self.assets.offsets.get(asset_name).unwrap();
-        }
 
         self.batch.draw(
             &mut frame
                 .as_target()
-                .transform(self.camera.update(Some(&Rectangle {
-                    x: object.pos.x as i16,
-                    y: object.pos.y as i16,
-                    width: target.width as i16,
-                    height: target.height as i16,
-                }))),
+                .transform(self.camera.update(Some(&object.rect))),
         );
+        self.batch.clear();
     }
 
-    fn debug(&self, _input: &Self::Input, frame: &mut Frame<'_>, debug: &mut Debug) {
-        let default = Object::new();
+    fn debug(&self, input: &Self::Input, frame: &mut Frame<'_>, debug: &mut Debug) {
+        let default = Object::with_size(70.0, 70.0);
         let object = self.objects.get("player").unwrap_or(&default);
-        let mut target = &self.assets.default_offset;
-        if let Some(asset_name) = &object.asset_name {
-            target = self.assets.offsets.get(asset_name).unwrap();
-        }
 
-        for position in self.map.collidable_tiles(&Rectangle {
-            x: object.pos.x as i16,
-            y: object.pos.y as i16,
-            width: target.width as i16,
-            height: target.height as i16,
-        }) {
+        for cell in self.map.collidable_tiles(&object.rect) {
+            println!("{:?}, {:?}", cell.get_rect(), cell.get_rect().point());
             self.debug_sheet.draw(
                 Sprite {
                     source: Rectangle {
                         x: 0,
                         y: 0,
-                        width: 72,
-                        height: 72,
+                        width: 70,
+                        height: 70,
                     },
-                    position,
+                    position: cell.get_rect().point(),
                     scale: (1.0, 1.0),
                 },
                 &mut frame
                     .as_target()
-                    .transform(self.camera.get_transform(Some(&Rectangle {
-                        x: object.pos.x as i16,
-                        y: object.pos.y as i16,
-                        width: target.width as i16,
-                        height: target.height as i16,
-                    }))),
+                    .transform(self.camera.get_transform(Some(&object.rect))),
             );
         }
 
+        for cell in self
+            .map
+            .collidable_tiles(&Rect::from_point(input.cursor_position()))
+        {
+            self.debug_sheet.draw(
+                Sprite {
+                    source: Rectangle {
+                        x: 0,
+                        y: 0,
+                        width: 70,
+                        height: 70,
+                    },
+                    position: cell.get_rect().point(),
+                    scale: (1.0, 1.0),
+                },
+                &mut frame
+                    .as_target()
+                    .transform(self.camera.get_transform(Some(&object.rect))),
+            );
+        }
         debug.draw(frame);
     }
 

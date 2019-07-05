@@ -1,5 +1,5 @@
-// use crate::rect::Rectangle;
-use coffee::graphics::{Point, Rectangle};
+use crate::object::Object;
+use crate::rect::Rect;
 use itertools::iproduct;
 use serde::{Deserialize, Serialize};
 use serde_json;
@@ -9,18 +9,40 @@ use std::io;
 use std::path::Path;
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
-pub struct Cell<'a> {
-    pub asset_name: Cow<'a, str>,
-}
+pub struct Cell<'a>(Object<'a>);
 
 impl<'a> Cell<'a> {
-    pub fn new<S>(asset_name: S) -> Self
+    pub fn with_size(width: f32, height: f32) -> Self {
+        Self(Object::with_size(width, height))
+    }
+
+    pub fn collision(self, collides: bool) -> Self {
+        Self(self.0.collision(collides))
+    }
+
+    pub fn move_to(self, x: f32, y: f32) -> Self {
+        Self(self.0.move_to(x, y))
+    }
+
+    pub fn with_asset<S>(self, asset_name: S) -> Self
     where
         S: Into<Cow<'a, str>>,
     {
-        Self {
-            asset_name: asset_name.into(),
-        }
+        Self(self.0.with_asset(asset_name))
+    }
+
+    pub fn get_name(&self) -> Option<&Cow<'a, str>> {
+        self.0.asset_name.as_ref()
+    }
+
+    pub fn get_rect(&self) -> &Rect<f32> {
+        &self.0.rect
+    }
+}
+
+impl<'a> Default for Cell<'a> {
+    fn default() -> Self {
+        Self(Object::default())
     }
 }
 
@@ -34,29 +56,39 @@ pub struct Map<'a> {
 
 impl<'a> Default for Map<'a> {
     fn default() -> Map<'a> {
+        let size = 70.0;
         let width = 30;
         let height = 15;
         let mut cells = Vec::new();
-        let wall = Cell::new("box");
-        let empty = Cell::new("dirtCenter");
-        for _ in 0..width {
-            cells.push(wall.clone());
+        let wall = Cell::with_size(size, size).with_asset("box");
+        let empty = Cell::with_size(size, size)
+            .with_asset("dirtCenter")
+            .collision(false);
+
+        for x in 0..width {
+            cells.push(wall.clone().move_to(x as f32 * size, 0.0));
         }
-        for _ in 0..(height - 2) {
-            cells.push(wall.clone());
-            for _ in 0..(width - 2) {
-                cells.push(empty.clone());
+        for y in 0..(height - 2) {
+            cells.push(wall.clone().move_to(0.0, y as f32 * size));
+            for x in 0..(width - 2) {
+                cells.push(empty.clone().move_to(x as f32 * size, y as f32 * size));
             }
-            cells.push(wall.clone());
+            cells.push(
+                wall.clone()
+                    .move_to(width as f32 * size - size, y as f32 * size),
+            );
         }
-        for _ in 0..(width) {
-            cells.push(wall.clone());
+        for x in 0..(width) {
+            cells.push(
+                wall.clone()
+                    .move_to(x as f32 * size, height as f32 * size - size),
+            );
         }
         Self {
             cells: cells,
             width: width,
             height: height,
-            tilesize: 70,
+            tilesize: size as u16,
         }
     }
 }
@@ -90,19 +122,20 @@ impl<'a> Map<'a> {
             .unwrap_or_else(|e| println!("Unable to write the map file: {}.", e));
     }
 
-    pub fn collidable_tiles(&self, target: &Rectangle<i16>) -> Vec<Point> {
-        let minx = (target.x as f32 / self.tilesize as f32) as usize;
-        let maxx = ((target.x + target.width) as f32 / self.tilesize as f32).ceil() as usize;
+    pub fn collidable_tiles(&self, target: &Rect<f32>) -> Vec<&Cell> {
+        let x = f32::max(target.x, 0.0);
+        let minx = (x / self.tilesize as f32) as usize + 1;
+        let maxx = ((x + target.width) / self.tilesize as f32).ceil() as usize + 1;
 
-        let miny = (target.y as f32 / self.tilesize as f32) as usize;
-        let maxy = ((target.y + target.height) as f32 / self.tilesize as f32).ceil() as usize;
+        let y = f32::max(target.y, 0.0);
+        let miny = (y / self.tilesize as f32) as usize + 1;
+        let maxy = ((y + target.height) / self.tilesize as f32).ceil() as usize + 1;
 
         iproduct!(minx..maxx, miny..maxy)
-            .map(|(x, y)| {
-                Point::new(
-                    x as f32 * self.tilesize as f32,
-                    y as f32 * self.tilesize as f32,
-                )
+            .filter_map(|(x, y)| {
+                println!("{} {}", x, y);
+                self.cells
+                    .get(std::cmp::max(0, y * self.width as usize + x))
             })
             .collect()
     }

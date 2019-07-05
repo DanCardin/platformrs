@@ -7,6 +7,7 @@ mod config;
 mod error;
 mod game;
 mod map;
+mod object;
 mod rect;
 
 use crate::config::Config;
