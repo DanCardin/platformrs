@@ -9,40 +9,52 @@ use std::io;
 use std::path::Path;
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
-pub struct Cell<'a>(Object<'a>);
+pub struct Cell<'a> {
+    pub object: Object<'a>,
+}
 
 impl<'a> Cell<'a> {
     pub fn with_size(width: f32, height: f32) -> Self {
-        Self(Object::with_size(width, height))
+        Self {
+            object: Object::with_size(width, height),
+        }
     }
 
     pub fn collision(self, collides: bool) -> Self {
-        Self(self.0.collision(collides))
+        Self {
+            object: self.object.collision(collides),
+        }
     }
 
     pub fn move_to(self, x: f32, y: f32) -> Self {
-        Self(self.0.move_to(x, y))
+        Self {
+            object: self.object.move_to(x, y),
+        }
     }
 
     pub fn with_asset<S>(self, asset_name: S) -> Self
     where
         S: Into<Cow<'a, str>>,
     {
-        Self(self.0.with_asset(asset_name))
+        Self {
+            object: self.object.with_asset(asset_name),
+        }
     }
 
     pub fn get_name(&self) -> Option<&Cow<'a, str>> {
-        self.0.asset_name.as_ref()
+        self.object.asset_name.as_ref()
     }
 
     pub fn get_rect(&self) -> &Rect<f32> {
-        &self.0.rect
+        &self.object.rect
     }
 }
 
 impl<'a> Default for Cell<'a> {
     fn default() -> Self {
-        Self(Object::default())
+        Self {
+            object: Object::default(),
+        }
     }
 }
 
@@ -65,24 +77,14 @@ impl<'a> Default for Map<'a> {
             .with_asset("dirtCenter")
             .collision(false);
 
-        for x in 0..width {
-            cells.push(wall.clone().move_to(x as f32 * size, 0.0));
-        }
-        for y in 0..(height - 2) {
-            cells.push(wall.clone().move_to(0.0, y as f32 * size));
-            for x in 0..(width - 2) {
-                cells.push(empty.clone().move_to(x as f32 * size, y as f32 * size));
+        for y in 0..height {
+            for x in 0..width {
+                let mut cell = empty.clone();
+                if x == 0 || y == 0 || x == width - 1 || y == height - 1 {
+                    cell = wall.clone();
+                }
+                cells.push(cell.move_to(x as f32 * size, y as f32 * size));
             }
-            cells.push(
-                wall.clone()
-                    .move_to(width as f32 * size - size, y as f32 * size),
-            );
-        }
-        for x in 0..(width) {
-            cells.push(
-                wall.clone()
-                    .move_to(x as f32 * size, height as f32 * size - size),
-            );
         }
         Self {
             cells: cells,
@@ -124,16 +126,15 @@ impl<'a> Map<'a> {
 
     pub fn collidable_tiles(&self, target: &Rect<f32>) -> Vec<&Cell> {
         let x = f32::max(target.x, 0.0);
-        let minx = (x / self.tilesize as f32) as usize + 1;
-        let maxx = ((x + target.width) / self.tilesize as f32).ceil() as usize + 1;
+        let minx = (x / self.tilesize as f32) as usize;
+        let maxx = ((x + target.width) / self.tilesize as f32).ceil() as usize;
 
         let y = f32::max(target.y, 0.0);
-        let miny = (y / self.tilesize as f32) as usize + 1;
-        let maxy = ((y + target.height) / self.tilesize as f32).ceil() as usize + 1;
+        let miny = (y / self.tilesize as f32) as usize;
+        let maxy = ((y + target.height) / self.tilesize as f32).ceil() as usize;
 
         iproduct!(minx..maxx, miny..maxy)
             .filter_map(|(x, y)| {
-                println!("{} {}", x, y);
                 self.cells
                     .get(std::cmp::max(0, y * self.width as usize + x))
             })

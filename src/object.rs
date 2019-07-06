@@ -54,6 +54,17 @@ impl<'a> Object<'a> {
         self.visible = false;
         self
     }
+
+    pub fn overlap(&self, other: &Self) -> Option<Rect<f32>> {
+        if !self.collides || !other.collides {
+            return None;
+        }
+        self.rect.overlap(&other.rect)
+    }
+
+    pub fn collide(&mut self, other: &Self) {
+        let overlap = self.overlap(other);
+    }
 }
 
 impl<'a> Default for Object<'a> {

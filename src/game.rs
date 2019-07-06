@@ -135,7 +135,9 @@ impl<'a> Game for Platformrs<'a> {
         }
 
         // TODO: Move collision logic elsewhere
-        for cell in self.map.collidable_tiles(&player.rect) {}
+        for cell in self.map.collidable_tiles(&player.rect) {
+            // player.collide(&cell.object);
+        }
     }
 
     fn draw(&mut self, frame: &mut Frame, _timer: &coffee::Timer) {
@@ -185,47 +187,55 @@ impl<'a> Game for Platformrs<'a> {
 
     fn debug(&self, input: &Self::Input, frame: &mut Frame<'_>, debug: &mut Debug) {
         let default = Object::with_size(70.0, 70.0);
-        let object = self.objects.get("player").unwrap_or(&default);
+        let player = self.objects.get("player").unwrap_or(&default);
 
-        for cell in self.map.collidable_tiles(&object.rect) {
-            println!("{:?}, {:?}", cell.get_rect(), cell.get_rect().point());
-            self.debug_sheet.draw(
-                Sprite {
+        let mut batch = Batch::new(self.debug_sheet.clone());
+        for cell in self.map.collidable_tiles(&player.rect) {
+            batch.add(Sprite {
+                source: Rectangle {
+                    x: 0,
+                    y: 0,
+                    width: 70,
+                    height: 70,
+                },
+                position: cell.get_rect().point(),
+                scale: (1.0, 1.0),
+            });
+
+            if let Some(overlap) = player.overlap(&cell.object) {
+                batch.add(Sprite {
                     source: Rectangle {
                         x: 0,
                         y: 0,
-                        width: 70,
-                        height: 70,
+                        width: 1,
+                        height: 1,
                     },
-                    position: cell.get_rect().point(),
-                    scale: (1.0, 1.0),
-                },
-                &mut frame
-                    .as_target()
-                    .transform(self.camera.get_transform(Some(&object.rect))),
-            );
+                    position: overlap.point(),
+                    scale: (overlap.width, overlap.height),
+                });
+            }
         }
-
         for cell in self
             .map
             .collidable_tiles(&Rect::from_point(input.cursor_position()))
         {
-            self.debug_sheet.draw(
-                Sprite {
-                    source: Rectangle {
-                        x: 0,
-                        y: 0,
-                        width: 70,
-                        height: 70,
-                    },
-                    position: cell.get_rect().point(),
-                    scale: (1.0, 1.0),
+            batch.add(Sprite {
+                source: Rectangle {
+                    x: 0,
+                    y: 0,
+                    width: 70,
+                    height: 70,
                 },
-                &mut frame
-                    .as_target()
-                    .transform(self.camera.get_transform(Some(&object.rect))),
-            );
+                position: cell.get_rect().point(),
+                scale: (1.0, 1.0),
+            });
         }
+        batch.draw(
+            &mut frame
+                .as_target()
+                .transform(self.camera.get_transform(Some(&player.rect))),
+        );
+
         debug.draw(frame);
     }
 

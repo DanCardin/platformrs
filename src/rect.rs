@@ -4,7 +4,7 @@ use std::fmt::Debug;
 use nalgebra::Point2;
 use serde::{Deserialize, Serialize};
 use std::cmp::PartialOrd;
-use std::ops::Add;
+use std::ops::{Add, Sub};
 
 #[derive(Serialize, Deserialize, Debug, PartialEq, Eq, Copy, Clone)]
 pub struct Rect<T> {
@@ -16,7 +16,7 @@ pub struct Rect<T> {
 
 impl<T> Rect<T>
 where
-    T: 'static + Add<Output = T> + PartialOrd + From<i16> + Copy + Debug,
+    T: 'static + Sub<Output = T> + Add<Output = T> + PartialOrd + From<i16> + Copy + Debug,
 {
     pub fn new(x: T, y: T, width: T, height: T) -> Self {
         Self {
@@ -46,8 +46,11 @@ where
         Point2::new(self.x, self.y)
     }
 
-    #[cfg(allow_unused)]
-    pub fn overlap(&self, other: Self) -> bool {
+    pub fn bottom_right(&self) -> Point2<T> {
+        Point2::new(self.x + self.width, self.y + self.height)
+    }
+
+    pub fn has_overlap(&self, other: &Self) -> bool {
         // When one rect is fully left of the other.
         if self.x + self.width < other.x || other.x + other.width < self.x {
             return false;
@@ -91,5 +94,25 @@ impl Default for Rect<f32> {
             width: 0.0,
             height: 0.0,
         }
+    }
+}
+
+impl Rect<f32> {
+    pub fn overlap(&self, other: &Self) -> Option<Self> {
+        if !self.has_overlap(other) {
+            return None;
+        }
+
+        let x = f32::max(self.x, other.x);
+        let y = f32::max(self.y, other.y);
+
+        let bottom_right = self.bottom_right();
+        let other_bottom_right = other.bottom_right();
+        Some(Rect::new(
+            x,
+            y,
+            f32::min(bottom_right.x, other_bottom_right.x) - x,
+            f32::min(bottom_right.y, other_bottom_right.y) - y,
+        ))
     }
 }
