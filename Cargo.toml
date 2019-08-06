@@ -16,6 +16,7 @@ nalgebra = ">=0.18"
 rayon = "*"
 derive_more = "0.13.0"
 itertools = ">=0.8"
+uuid = { version = "0.7", features = ["v4"] }
 
 [features]
 debug = ["coffee/debug"]

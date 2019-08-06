@@ -1,6 +1,7 @@
 {
   "cells": [
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 0.0,
@@ -8,12 +9,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 70.0,
@@ -21,12 +22,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 140.0,
@@ -34,12 +35,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 210.0,
@@ -47,12 +48,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 280.0,
@@ -60,12 +61,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 350.0,
@@ -73,12 +74,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 420.0,
@@ -86,12 +87,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 490.0,
@@ -99,12 +100,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 560.0,
@@ -112,12 +113,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 630.0,
@@ -125,12 +126,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 700.0,
@@ -138,12 +139,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 770.0,
@@ -151,12 +152,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 840.0,
@@ -164,12 +165,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 910.0,
@@ -177,12 +178,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 980.0,
@@ -190,12 +191,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 1050.0,
@@ -203,12 +204,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 1120.0,
@@ -216,12 +217,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 1190.0,
@@ -229,12 +230,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 1260.0,
@@ -242,12 +243,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 1330.0,
@@ -255,12 +256,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 1400.0,
@@ -268,12 +269,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 1470.0,
@@ -281,12 +282,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 1540.0,
@@ -294,12 +295,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 1610.0,
@@ -307,12 +308,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 1680.0,
@@ -320,12 +321,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 1750.0,
@@ -333,12 +334,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 1820.0,
@@ -346,12 +347,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 1890.0,
@@ -359,12 +360,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 1960.0,
@@ -372,12 +373,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 2030.0,
@@ -385,12 +386,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 0.0,
@@ -398,12 +399,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 70.0,
@@ -411,12 +412,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 140.0,
@@ -424,12 +425,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 210.0,
@@ -437,12 +438,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 280.0,
@@ -450,12 +451,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 350.0,
@@ -463,12 +464,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 420.0,
@@ -476,12 +477,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 490.0,
@@ -489,12 +490,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 560.0,
@@ -502,12 +503,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 630.0,
@@ -515,12 +516,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 700.0,
@@ -528,12 +529,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 770.0,
@@ -541,12 +542,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 840.0,
@@ -554,12 +555,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 910.0,
@@ -567,12 +568,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 980.0,
@@ -580,12 +581,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1050.0,
@@ -593,12 +594,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1120.0,
@@ -606,12 +607,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1190.0,
@@ -619,12 +620,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1260.0,
@@ -632,12 +633,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1330.0,
@@ -645,12 +646,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1400.0,
@@ -658,12 +659,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1470.0,
@@ -671,12 +672,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1540.0,
@@ -684,12 +685,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1610.0,
@@ -697,12 +698,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1680.0,
@@ -710,12 +711,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1750.0,
@@ -723,12 +724,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1820.0,
@@ -736,12 +737,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1890.0,
@@ -749,12 +750,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1960.0,
@@ -762,12 +763,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 2030.0,
@@ -775,12 +776,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 0.0,
@@ -788,12 +789,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 70.0,
@@ -801,12 +802,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 140.0,
@@ -814,12 +815,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 210.0,
@@ -827,12 +828,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 280.0,
@@ -840,12 +841,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 350.0,
@@ -853,12 +854,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 420.0,
@@ -866,12 +867,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 490.0,
@@ -879,12 +880,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 560.0,
@@ -892,12 +893,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 630.0,
@@ -905,12 +906,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 700.0,
@@ -918,12 +919,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 770.0,
@@ -931,12 +932,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 840.0,
@@ -944,12 +945,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 910.0,
@@ -957,12 +958,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 980.0,
@@ -970,12 +971,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1050.0,
@@ -983,12 +984,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1120.0,
@@ -996,12 +997,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1190.0,
@@ -1009,12 +1010,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1260.0,
@@ -1022,12 +1023,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1330.0,
@@ -1035,12 +1036,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1400.0,
@@ -1048,12 +1049,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1470.0,
@@ -1061,12 +1062,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1540.0,
@@ -1074,12 +1075,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1610.0,
@@ -1087,12 +1088,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1680.0,
@@ -1100,12 +1101,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1750.0,
@@ -1113,12 +1114,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1820.0,
@@ -1126,12 +1127,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1890.0,
@@ -1139,12 +1140,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1960.0,
@@ -1152,12 +1153,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 2030.0,
@@ -1165,12 +1166,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 0.0,
@@ -1178,12 +1179,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 70.0,
@@ -1191,12 +1192,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 140.0,
@@ -1204,12 +1205,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 210.0,
@@ -1217,12 +1218,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 280.0,
@@ -1230,12 +1231,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 350.0,
@@ -1243,12 +1244,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 420.0,
@@ -1256,12 +1257,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 490.0,
@@ -1269,12 +1270,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 560.0,
@@ -1282,12 +1283,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 630.0,
@@ -1295,12 +1296,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 700.0,
@@ -1308,12 +1309,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 770.0,
@@ -1321,12 +1322,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 840.0,
@@ -1334,12 +1335,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 910.0,
@@ -1347,12 +1348,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 980.0,
@@ -1360,12 +1361,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1050.0,
@@ -1373,12 +1374,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1120.0,
@@ -1386,12 +1387,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1190.0,
@@ -1399,12 +1400,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1260.0,
@@ -1412,12 +1413,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1330.0,
@@ -1425,12 +1426,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1400.0,
@@ -1438,12 +1439,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1470.0,
@@ -1451,12 +1452,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1540.0,
@@ -1464,12 +1465,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1610.0,
@@ -1477,12 +1478,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1680.0,
@@ -1490,12 +1491,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1750.0,
@@ -1503,12 +1504,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1820.0,
@@ -1516,12 +1517,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1890.0,
@@ -1529,12 +1530,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1960.0,
@@ -1542,12 +1543,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 2030.0,
@@ -1555,12 +1556,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 0.0,
@@ -1568,12 +1569,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 70.0,
@@ -1581,12 +1582,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 140.0,
@@ -1594,12 +1595,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 210.0,
@@ -1607,12 +1608,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 280.0,
@@ -1620,12 +1621,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 350.0,
@@ -1633,12 +1634,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 420.0,
@@ -1646,12 +1647,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 490.0,
@@ -1659,12 +1660,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 560.0,
@@ -1672,12 +1673,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 630.0,
@@ -1685,12 +1686,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 700.0,
@@ -1698,12 +1699,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 770.0,
@@ -1711,12 +1712,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 840.0,
@@ -1724,12 +1725,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 910.0,
@@ -1737,12 +1738,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 980.0,
@@ -1750,12 +1751,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1050.0,
@@ -1763,12 +1764,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1120.0,
@@ -1776,12 +1777,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1190.0,
@@ -1789,12 +1790,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1260.0,
@@ -1802,12 +1803,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1330.0,
@@ -1815,12 +1816,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1400.0,
@@ -1828,12 +1829,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1470.0,
@@ -1841,12 +1842,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1540.0,
@@ -1854,12 +1855,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1610.0,
@@ -1867,12 +1868,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1680.0,
@@ -1880,12 +1881,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1750.0,
@@ -1893,12 +1894,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1820.0,
@@ -1906,12 +1907,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1890.0,
@@ -1919,12 +1920,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1960.0,
@@ -1932,12 +1933,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 2030.0,
@@ -1945,12 +1946,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 0.0,
@@ -1958,12 +1959,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 70.0,
@@ -1971,12 +1972,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 140.0,
@@ -1984,12 +1985,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 210.0,
@@ -1997,12 +1998,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 280.0,
@@ -2010,12 +2011,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 350.0,
@@ -2023,12 +2024,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 420.0,
@@ -2036,12 +2037,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 490.0,
@@ -2049,12 +2050,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 560.0,
@@ -2062,12 +2063,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 630.0,
@@ -2075,12 +2076,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 700.0,
@@ -2088,12 +2089,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 770.0,
@@ -2101,12 +2102,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 840.0,
@@ -2114,12 +2115,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 910.0,
@@ -2127,12 +2128,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 980.0,
@@ -2140,12 +2141,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1050.0,
@@ -2153,12 +2154,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1120.0,
@@ -2166,12 +2167,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1190.0,
@@ -2179,12 +2180,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1260.0,
@@ -2192,12 +2193,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1330.0,
@@ -2205,12 +2206,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1400.0,
@@ -2218,12 +2219,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1470.0,
@@ -2231,12 +2232,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1540.0,
@@ -2244,12 +2245,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1610.0,
@@ -2257,12 +2258,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1680.0,
@@ -2270,12 +2271,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1750.0,
@@ -2283,12 +2284,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1820.0,
@@ -2296,12 +2297,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1890.0,
@@ -2309,12 +2310,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1960.0,
@@ -2322,12 +2323,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 2030.0,
@@ -2335,12 +2336,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 0.0,
@@ -2348,12 +2349,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 70.0,
@@ -2361,12 +2362,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 140.0,
@@ -2374,12 +2375,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 210.0,
@@ -2387,12 +2388,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 280.0,
@@ -2400,12 +2401,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 350.0,
@@ -2413,12 +2414,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 420.0,
@@ -2426,12 +2427,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 490.0,
@@ -2439,12 +2440,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 560.0,
@@ -2452,12 +2453,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 630.0,
@@ -2465,12 +2466,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 700.0,
@@ -2478,12 +2479,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 770.0,
@@ -2491,12 +2492,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 840.0,
@@ -2504,12 +2505,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 910.0,
@@ -2517,12 +2518,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 980.0,
@@ -2530,12 +2531,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1050.0,
@@ -2543,12 +2544,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1120.0,
@@ -2556,12 +2557,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1190.0,
@@ -2569,12 +2570,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1260.0,
@@ -2582,12 +2583,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1330.0,
@@ -2595,12 +2596,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1400.0,
@@ -2608,12 +2609,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1470.0,
@@ -2621,12 +2622,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1540.0,
@@ -2634,12 +2635,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1610.0,
@@ -2647,12 +2648,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1680.0,
@@ -2660,12 +2661,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1750.0,
@@ -2673,12 +2674,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1820.0,
@@ -2686,12 +2687,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1890.0,
@@ -2699,12 +2700,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1960.0,
@@ -2712,12 +2713,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 2030.0,
@@ -2725,12 +2726,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 0.0,
@@ -2738,12 +2739,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 70.0,
@@ -2751,12 +2752,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 140.0,
@@ -2764,12 +2765,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 210.0,
@@ -2777,12 +2778,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 280.0,
@@ -2790,12 +2791,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 350.0,
@@ -2803,12 +2804,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 420.0,
@@ -2816,12 +2817,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 490.0,
@@ -2829,12 +2830,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 560.0,
@@ -2842,12 +2843,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 630.0,
@@ -2855,12 +2856,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 700.0,
@@ -2868,12 +2869,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 770.0,
@@ -2881,12 +2882,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 840.0,
@@ -2894,12 +2895,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 910.0,
@@ -2907,12 +2908,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 980.0,
@@ -2920,12 +2921,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1050.0,
@@ -2933,12 +2934,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1120.0,
@@ -2946,12 +2947,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1190.0,
@@ -2959,12 +2960,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1260.0,
@@ -2972,12 +2973,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1330.0,
@@ -2985,12 +2986,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1400.0,
@@ -2998,12 +2999,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1470.0,
@@ -3011,12 +3012,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1540.0,
@@ -3024,12 +3025,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1610.0,
@@ -3037,12 +3038,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1680.0,
@@ -3050,12 +3051,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1750.0,
@@ -3063,12 +3064,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1820.0,
@@ -3076,12 +3077,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1890.0,
@@ -3089,12 +3090,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1960.0,
@@ -3102,12 +3103,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 2030.0,
@@ -3115,12 +3116,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 0.0,
@@ -3128,12 +3129,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 70.0,
@@ -3141,12 +3142,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 140.0,
@@ -3154,12 +3155,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 210.0,
@@ -3167,12 +3168,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 280.0,
@@ -3180,12 +3181,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 350.0,
@@ -3193,12 +3194,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 420.0,
@@ -3206,12 +3207,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 490.0,
@@ -3219,12 +3220,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 560.0,
@@ -3232,12 +3233,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 630.0,
@@ -3245,12 +3246,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 700.0,
@@ -3258,12 +3259,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 770.0,
@@ -3271,12 +3272,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 840.0,
@@ -3284,12 +3285,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 910.0,
@@ -3297,12 +3298,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 980.0,
@@ -3310,12 +3311,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1050.0,
@@ -3323,12 +3324,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1120.0,
@@ -3336,12 +3337,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1190.0,
@@ -3349,12 +3350,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1260.0,
@@ -3362,12 +3363,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1330.0,
@@ -3375,12 +3376,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1400.0,
@@ -3388,12 +3389,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1470.0,
@@ -3401,12 +3402,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1540.0,
@@ -3414,12 +3415,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1610.0,
@@ -3427,12 +3428,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1680.0,
@@ -3440,12 +3441,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1750.0,
@@ -3453,12 +3454,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1820.0,
@@ -3466,12 +3467,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1890.0,
@@ -3479,12 +3480,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1960.0,
@@ -3492,12 +3493,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 2030.0,
@@ -3505,12 +3506,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 0.0,
@@ -3518,12 +3519,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 70.0,
@@ -3531,12 +3532,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 140.0,
@@ -3544,12 +3545,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 210.0,
@@ -3557,12 +3558,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 280.0,
@@ -3570,12 +3571,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 350.0,
@@ -3583,12 +3584,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 420.0,
@@ -3596,12 +3597,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 490.0,
@@ -3609,12 +3610,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 560.0,
@@ -3622,12 +3623,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 630.0,
@@ -3635,12 +3636,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 700.0,
@@ -3648,12 +3649,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 770.0,
@@ -3661,12 +3662,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 840.0,
@@ -3674,12 +3675,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 910.0,
@@ -3687,12 +3688,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 980.0,
@@ -3700,12 +3701,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1050.0,
@@ -3713,12 +3714,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1120.0,
@@ -3726,12 +3727,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1190.0,
@@ -3739,12 +3740,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1260.0,
@@ -3752,12 +3753,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1330.0,
@@ -3765,12 +3766,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1400.0,
@@ -3778,12 +3779,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1470.0,
@@ -3791,12 +3792,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1540.0,
@@ -3804,12 +3805,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1610.0,
@@ -3817,12 +3818,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1680.0,
@@ -3830,12 +3831,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1750.0,
@@ -3843,12 +3844,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1820.0,
@@ -3856,12 +3857,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1890.0,
@@ -3869,12 +3870,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1960.0,
@@ -3882,12 +3883,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 2030.0,
@@ -3895,12 +3896,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 0.0,
@@ -3908,12 +3909,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 70.0,
@@ -3921,12 +3922,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 140.0,
@@ -3934,12 +3935,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 210.0,
@@ -3947,12 +3948,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 280.0,
@@ -3960,12 +3961,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 350.0,
@@ -3973,12 +3974,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 420.0,
@@ -3986,12 +3987,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 490.0,
@@ -3999,12 +4000,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 560.0,
@@ -4012,12 +4013,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 630.0,
@@ -4025,12 +4026,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 700.0,
@@ -4038,12 +4039,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 770.0,
@@ -4051,12 +4052,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 840.0,
@@ -4064,12 +4065,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 910.0,
@@ -4077,12 +4078,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 980.0,
@@ -4090,12 +4091,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1050.0,
@@ -4103,12 +4104,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1120.0,
@@ -4116,12 +4117,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1190.0,
@@ -4129,12 +4130,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1260.0,
@@ -4142,12 +4143,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1330.0,
@@ -4155,12 +4156,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1400.0,
@@ -4168,12 +4169,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1470.0,
@@ -4181,12 +4182,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1540.0,
@@ -4194,12 +4195,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1610.0,
@@ -4207,12 +4208,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1680.0,
@@ -4220,12 +4221,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1750.0,
@@ -4233,12 +4234,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1820.0,
@@ -4246,12 +4247,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1890.0,
@@ -4259,12 +4260,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1960.0,
@@ -4272,12 +4273,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 2030.0,
@@ -4285,12 +4286,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 0.0,
@@ -4298,12 +4299,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 70.0,
@@ -4311,12 +4312,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 140.0,
@@ -4324,12 +4325,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 210.0,
@@ -4337,12 +4338,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 280.0,
@@ -4350,12 +4351,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 350.0,
@@ -4363,12 +4364,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 420.0,
@@ -4376,12 +4377,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 490.0,
@@ -4389,12 +4390,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 560.0,
@@ -4402,12 +4403,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 630.0,
@@ -4415,12 +4416,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 700.0,
@@ -4428,12 +4429,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 770.0,
@@ -4441,12 +4442,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 840.0,
@@ -4454,12 +4455,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 910.0,
@@ -4467,12 +4468,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 980.0,
@@ -4480,12 +4481,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1050.0,
@@ -4493,12 +4494,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1120.0,
@@ -4506,12 +4507,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1190.0,
@@ -4519,12 +4520,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1260.0,
@@ -4532,12 +4533,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1330.0,
@@ -4545,12 +4546,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1400.0,
@@ -4558,12 +4559,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1470.0,
@@ -4571,12 +4572,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1540.0,
@@ -4584,12 +4585,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1610.0,
@@ -4597,12 +4598,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1680.0,
@@ -4610,12 +4611,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1750.0,
@@ -4623,12 +4624,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1820.0,
@@ -4636,12 +4637,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1890.0,
@@ -4649,12 +4650,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1960.0,
@@ -4662,12 +4663,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 2030.0,
@@ -4675,12 +4676,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 0.0,
@@ -4688,12 +4689,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 70.0,
@@ -4701,12 +4702,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 140.0,
@@ -4714,12 +4715,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 210.0,
@@ -4727,12 +4728,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 280.0,
@@ -4740,12 +4741,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 350.0,
@@ -4753,12 +4754,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 420.0,
@@ -4766,12 +4767,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 490.0,
@@ -4779,12 +4780,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 560.0,
@@ -4792,12 +4793,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 630.0,
@@ -4805,12 +4806,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 700.0,
@@ -4818,12 +4819,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 770.0,
@@ -4831,12 +4832,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 840.0,
@@ -4844,12 +4845,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 910.0,
@@ -4857,12 +4858,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 980.0,
@@ -4870,12 +4871,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1050.0,
@@ -4883,12 +4884,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1120.0,
@@ -4896,12 +4897,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1190.0,
@@ -4909,12 +4910,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1260.0,
@@ -4922,12 +4923,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1330.0,
@@ -4935,12 +4936,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1400.0,
@@ -4948,12 +4949,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1470.0,
@@ -4961,12 +4962,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1540.0,
@@ -4974,12 +4975,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1610.0,
@@ -4987,12 +4988,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1680.0,
@@ -5000,12 +5001,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1750.0,
@@ -5013,12 +5014,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1820.0,
@@ -5026,12 +5027,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1890.0,
@@ -5039,12 +5040,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1960.0,
@@ -5052,12 +5053,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 2030.0,
@@ -5065,12 +5066,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 0.0,
@@ -5078,12 +5079,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 70.0,
@@ -5091,12 +5092,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 140.0,
@@ -5104,12 +5105,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 210.0,
@@ -5117,12 +5118,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 280.0,
@@ -5130,12 +5131,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 350.0,
@@ -5143,12 +5144,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 420.0,
@@ -5156,12 +5157,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 490.0,
@@ -5169,12 +5170,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 560.0,
@@ -5182,12 +5183,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 630.0,
@@ -5195,12 +5196,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 700.0,
@@ -5208,12 +5209,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 770.0,
@@ -5221,12 +5222,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 840.0,
@@ -5234,12 +5235,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 910.0,
@@ -5247,12 +5248,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 980.0,
@@ -5260,12 +5261,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1050.0,
@@ -5273,12 +5274,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1120.0,
@@ -5286,12 +5287,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1190.0,
@@ -5299,12 +5300,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1260.0,
@@ -5312,12 +5313,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1330.0,
@@ -5325,12 +5326,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1400.0,
@@ -5338,12 +5339,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1470.0,
@@ -5351,12 +5352,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1540.0,
@@ -5364,12 +5365,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1610.0,
@@ -5377,12 +5378,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1680.0,
@@ -5390,12 +5391,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1750.0,
@@ -5403,12 +5404,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1820.0,
@@ -5416,12 +5417,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1890.0,
@@ -5429,12 +5430,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "dirtCenter",
       "object": {
         "rect": {
           "x": 1960.0,
@@ -5442,12 +5443,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "dirtCenter",
         "visible": true,
-        "collides": false
+        "is_solid": false
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 2030.0,
@@ -5455,12 +5456,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 0.0,
@@ -5468,12 +5469,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 70.0,
@@ -5481,12 +5482,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 140.0,
@@ -5494,12 +5495,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 210.0,
@@ -5507,12 +5508,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 280.0,
@@ -5520,12 +5521,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 350.0,
@@ -5533,12 +5534,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 420.0,
@@ -5546,12 +5547,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 490.0,
@@ -5559,12 +5560,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 560.0,
@@ -5572,12 +5573,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 630.0,
@@ -5585,12 +5586,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 700.0,
@@ -5598,12 +5599,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 770.0,
@@ -5611,12 +5612,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 840.0,
@@ -5624,12 +5625,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 910.0,
@@ -5637,12 +5638,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 980.0,
@@ -5650,12 +5651,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 1050.0,
@@ -5663,12 +5664,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 1120.0,
@@ -5676,12 +5677,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 1190.0,
@@ -5689,12 +5690,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 1260.0,
@@ -5702,12 +5703,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 1330.0,
@@ -5715,12 +5716,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 1400.0,
@@ -5728,12 +5729,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 1470.0,
@@ -5741,12 +5742,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 1540.0,
@@ -5754,12 +5755,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 1610.0,
@@ -5767,12 +5768,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 1680.0,
@@ -5780,12 +5781,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 1750.0,
@@ -5793,12 +5794,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 1820.0,
@@ -5806,12 +5807,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 1890.0,
@@ -5819,12 +5820,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 1960.0,
@@ -5832,12 +5833,12 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     },
     {
+      "asset_name": "box",
       "object": {
         "rect": {
           "x": 2030.0,
@@ -5845,9 +5846,8 @@
           "width": 70.0,
           "height": 70.0
         },
-        "asset_name": "box",
         "visible": true,
-        "collides": true
+        "is_solid": true
       }
     }
   ],

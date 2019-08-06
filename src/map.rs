@@ -10,39 +10,38 @@ use std::path::Path;
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct Cell<'a> {
-    pub object: Object<'a>,
+    pub asset_name: Option<Cow<'a, str>>,
+    pub object: Object,
 }
 
 impl<'a> Cell<'a> {
     pub fn with_size(width: f32, height: f32) -> Self {
         Self {
             object: Object::with_size(width, height),
+            asset_name: None,
         }
     }
 
-    pub fn collision(self, collides: bool) -> Self {
-        Self {
-            object: self.object.collision(collides),
-        }
+    pub fn collision(mut self, collides: bool) -> Self {
+        self.object = self.object.collision(collides);
+        self
     }
 
-    pub fn move_to(self, x: f32, y: f32) -> Self {
-        Self {
-            object: self.object.move_to(x, y),
-        }
+    pub fn at(mut self, x: f32, y: f32) -> Self {
+        self.object = self.object.at(x, y);
+        self
     }
 
-    pub fn with_asset<S>(self, asset_name: S) -> Self
+    pub fn with_asset<S>(mut self, asset_name: S) -> Self
     where
         S: Into<Cow<'a, str>>,
     {
-        Self {
-            object: self.object.with_asset(asset_name),
-        }
+        self.asset_name = Some(asset_name.into());
+        self
     }
 
     pub fn get_name(&self) -> Option<&Cow<'a, str>> {
-        self.object.asset_name.as_ref()
+        self.asset_name.as_ref()
     }
 
     pub fn get_rect(&self) -> &Rect<f32> {
@@ -54,6 +53,7 @@ impl<'a> Default for Cell<'a> {
     fn default() -> Self {
         Self {
             object: Object::default(),
+            asset_name: None,
         }
     }
 }
@@ -83,7 +83,7 @@ impl<'a> Default for Map<'a> {
                 if x == 0 || y == 0 || x == width - 1 || y == height - 1 {
                     cell = wall.clone();
                 }
-                cells.push(cell.move_to(x as f32 * size, y as f32 * size));
+                cells.push(cell.at(x as f32 * size, y as f32 * size));
             }
         }
         Self {

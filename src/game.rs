@@ -1,17 +1,21 @@
 use coffee::graphics::{Batch, Color, Frame, Image, Point, Rectangle, Sprite, Window};
-use coffee::input::{keyboard, KeyboardAndMouse};
+use coffee::input::KeyboardAndMouse;
 use coffee::load::loading_screen::ProgressBar;
 use coffee::load::Join;
 use coffee::load::Task;
 use coffee::Debug;
+use nalgebra::Vector2;
 use std::borrow::Cow;
 use std::collections::HashMap;
+use uuid::Uuid;
 
 use crate::assets::Assets;
 use crate::camera::Camera;
 use crate::config::Config;
+use crate::entity::{EntityBuilder, EntityManager};
+use crate::input::{Input, PlayerInput};
 use crate::map::Map;
-use crate::object::Object;
+use crate::object::{Movement, Object};
 use crate::rect::Rect;
 use coffee::Game;
 
@@ -22,19 +26,7 @@ pub struct Platformrs<'a> {
     camera: Camera,
     batch: Batch,
     debug_sheet: Image,
-    input: Option<Input>,
-    objects: HashMap<Cow<'a, str>, Object<'a>>,
-}
-
-enum Movement {
-    Left,
-    Right,
-}
-
-struct Input {
-    movement: Option<Movement>,
-    jumping: bool,
-    crouched: bool,
+    entity_manager: EntityManager<'a>,
 }
 
 impl<'a> Game for Platformrs<'a> {
@@ -68,10 +60,19 @@ impl<'a> Game for Platformrs<'a> {
                     (map.height * config.tilesize) as f32,
                 ));
 
-                let mut objects = HashMap::new();
-                objects.insert(
-                    "player".into(),
-                    Object::with_size(48.0, 106.0).with_asset("hillSmall"),
+                let mut entity_manager = EntityManager::new();
+
+                entity_manager.add(
+                    EntityBuilder::new()
+                        .with_name("player")
+                        .with_asset("hillSmall")
+                        .with_object(Object::with_size(48.0, 106.0).at(100.0, 100.0))
+                        .with_movement(
+                            Movement::new()
+                                .with_max_speed((Some(10.0), Some(20.0)))
+                                .with_force(Vector2::new(0.0, 0.5)),
+                        )
+                        .with_input(Input::Player(PlayerInput::new())),
                 );
 
                 Self {
@@ -79,64 +80,35 @@ impl<'a> Game for Platformrs<'a> {
                     map,
                     config,
                     camera,
-                    objects,
                     debug_sheet,
                     batch: Batch::new(spritesheet),
-                    input: None,
+                    entity_manager,
                 }
             })
     }
 
     fn interact(&mut self, input: &mut KeyboardAndMouse, _window: &mut Window) {
-        let mut movement = None;
-        if input.is_key_pressed(keyboard::KeyCode::A) {
-            movement = Some(Movement::Left);
+        for (uuid, entity_input) in self.entity_manager.get_inputs_mut() {
+            entity_input.update(input);
         }
-        if input.is_key_pressed(keyboard::KeyCode::D) {
-            movement = Some(Movement::Right);
-        }
-
-        let mut jumping = false;
-        if input.is_key_pressed(keyboard::KeyCode::W) {
-            jumping = true;
-        }
-
-        let mut crouched = false;
-        if input.is_key_pressed(keyboard::KeyCode::S) {
-            crouched = true;
-        }
-        self.input = Some(Input {
-            movement,
-            jumping,
-            crouched,
-        })
     }
 
     fn update(&mut self, _window: &Window) {
-        let speed = 5.0;
+        let object_forces = self
+            .entity_manager
+            .get_inputs()
+            .iter()
+            .map(|(uuid, input)| (**uuid, input.get_force()))
+            .collect::<HashMap<Uuid, Vector2<f32>>>();
 
-        let player = self.objects.get_mut("player").unwrap();
-        if let Some(input) = &self.input {
-            match input.movement {
-                Some(Movement::Left) => {
-                    player.rect.x -= speed;
-                }
-                Some(Movement::Right) => {
-                    player.rect.x += speed;
-                }
-                _ => {}
-            }
-
-            if input.jumping {
-                player.rect.y -= speed;
-            } else if input.crouched {
-                player.rect.y += speed;
+        for (uuid, movement) in self.entity_manager.get_movements_mut() {
+            if let Some(force) = object_forces.get(&uuid) {
+                movement.add_instantaneous_force(*force);
             }
         }
 
-        // TODO: Move collision logic elsewhere
-        for cell in self.map.collidable_tiles(&player.rect) {
-            // player.collide(&cell.object);
+        for uuid in self.entity_manager.get_entities() {
+            self.entity_manager.update(uuid, &self.map);
         }
     }
 
@@ -159,12 +131,13 @@ impl<'a> Game for Platformrs<'a> {
             });
         }
 
-        for object in self.objects.values() {
-            if !object.visible {
-                continue;
-            }
-            if let Some(asset_name) = &object.asset_name {
-                if let Some(offset) = self.assets.offsets.get(asset_name) {
+        for (uuid, asset) in self.entity_manager.get_assets() {
+            if let Some(object) = self.entity_manager.get_object(uuid) {
+                if !object.visible {
+                    continue;
+                }
+
+                if let Some(offset) = self.assets.offsets.get(&asset) {
                     self.batch.add(Sprite {
                         source: *offset,
                         position: object.rect.point(),
@@ -175,7 +148,10 @@ impl<'a> Game for Platformrs<'a> {
         }
 
         let default = Object::with_size(70.0, 70.0);
-        let object = self.objects.get("player").unwrap_or(&default);
+        let object = self
+            .entity_manager
+            .get_object(self.entity_manager.by_name("player"))
+            .unwrap_or(&default);
 
         self.batch.draw(
             &mut frame
@@ -186,10 +162,14 @@ impl<'a> Game for Platformrs<'a> {
     }
 
     fn debug(&self, input: &Self::Input, frame: &mut Frame<'_>, debug: &mut Debug) {
-        let default = Object::with_size(70.0, 70.0);
-        let player = self.objects.get("player").unwrap_or(&default);
-
         let mut batch = Batch::new(self.debug_sheet.clone());
+
+        let default = Object::with_size(70.0, 70.0);
+        let player = self
+            .entity_manager
+            .get_object(self.entity_manager.by_name("player"))
+            .unwrap_or(&default);
+
         for cell in self.map.collidable_tiles(&player.rect) {
             batch.add(Sprite {
                 source: Rectangle {
@@ -215,6 +195,7 @@ impl<'a> Game for Platformrs<'a> {
                 });
             }
         }
+
         for cell in self
             .map
             .collidable_tiles(&Rect::from_point(input.cursor_position()))
