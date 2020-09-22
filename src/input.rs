@@ -8,18 +8,22 @@ pub enum MoveDirection {
 
 pub struct PlayerInput {
     move_direction: Option<MoveDirection>,
+    crouched: bool,
+
     jump: bool,
     jumping: bool,
-    crouched: bool,
+    jump_released: bool,
 }
 
 impl PlayerInput {
     pub fn new() -> Self {
         Self {
             move_direction: None,
+            crouched: false,
+
             jump: false,
             jumping: false,
-            crouched: false,
+            jump_released: true,
         }
     }
 
@@ -32,15 +36,29 @@ impl PlayerInput {
             move_direction = Some(MoveDirection::Right);
         }
 
-        let jump = input.is_key_pressed(keyboard::KeyCode::W);
         let crouched = input.is_key_pressed(keyboard::KeyCode::S);
+        let jump_pressed = input.is_key_pressed(keyboard::KeyCode::W);
 
-        if !self.jumping {
-            // self.jumping = true;
-            self.jump = jump;
+        let mut jump_released = false;
+        if !jump_pressed {
+            jump_released = true;
         }
+
+        let mut jump = false;
+        if !self.jumping {
+            self.jumping = true;
+            jump = input.is_key_pressed(keyboard::KeyCode::W);
+        }
+
+        self.jump_released = jump_released;
+        self.jump = jump;
+
         self.crouched = crouched;
         self.move_direction = move_direction;
+    }
+
+    pub fn reset_jump(&mut self) {
+        self.jumping = false;
     }
 
     fn get_force(&self) -> Vector2<f32> {
@@ -57,7 +75,7 @@ impl PlayerInput {
         }
 
         if self.jump {
-            result.y = -15.0;
+            result.y = -30.0;
         }
         result
     }
@@ -65,20 +83,18 @@ impl PlayerInput {
 
 pub enum Input {
     Player(PlayerInput),
-    None,
 }
 
 impl Input {
     pub fn update(&mut self, input: &mut KeyboardAndMouse) {
         match self {
             Input::Player(player_input) => player_input.update(input),
-            Input::None => return,
         }
     }
+
     pub fn get_force(&self) -> Vector2<f32> {
         match self {
             Input::Player(player_input) => player_input.get_force(),
-            Input::None => Vector2::new(0.0, 0.0),
         }
     }
 }

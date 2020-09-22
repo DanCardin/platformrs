@@ -76,8 +76,8 @@ impl Movement {
         self.dirty = true;
     }
 
-    pub fn reset_speed(&mut self) {
-        self.speed = Vector2::new(0.0, 0.0);
+    pub fn reset_speed_y(&mut self) {
+        self.speed.y = 0.0;
     }
 
     pub fn dx(&mut self) -> f32 {

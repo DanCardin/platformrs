@@ -1,9 +1,6 @@
-// use crate::rect::Rect;
-// use nalgebra::Vector2;
-// use serde::{Deserialize, Serialize};
 use crate::input::Input;
-use crate::map::Map;
 use crate::object::{Movement, Object};
+use crate::rect::Rect;
 use std::borrow::Cow;
 use std::collections::HashMap;
 use uuid::Uuid;
@@ -25,6 +22,7 @@ pub struct EntityManager<'a> {
     assets: HashMap<Uuid, Cow<'a, str>>,
     movements: HashMap<Uuid, Movement>,
     inputs: HashMap<Uuid, Input>,
+    target: Option<Cow<'a, str>>,
 }
 
 impl<'a> EntityManager<'a> {
@@ -36,6 +34,7 @@ impl<'a> EntityManager<'a> {
             assets: HashMap::new(),
             movements: HashMap::new(),
             inputs: HashMap::new(),
+            target: None,
         }
     }
 
@@ -116,55 +115,27 @@ impl<'a> EntityManager<'a> {
         self.inputs.iter_mut().collect()
     }
 
-    pub fn get_input(&self, uuid: Uuid) -> &Input {
-        self.inputs.get(&uuid).unwrap_or(&Input::None)
+    pub fn get_input(&self, uuid: Uuid) -> Option<&Input> {
+        self.inputs.get(&uuid)
     }
 
-    pub fn update(&mut self, uuid: Uuid, map: &Map) {
-        let mut dx = 0.0;
-        let mut dy = 0.0;
-        if let Some(movement) = self.movements.get_mut(&uuid) {
-            dx = movement.dx();
-            dy = movement.dy();
-        }
+    pub fn get_input_mut(&mut self, uuid: Uuid) -> Option<&mut Input> {
+        self.inputs.get_mut(&uuid)
+    }
 
-        let mut hitx = false;
-        let mut hity = false;
-        if let Some(object) = self.get_object_mut(uuid) {
-            object.move_by(dx, 0.0);
-            if dx != 0.0 {
-                for cell in map.collidable_tiles(&object.rect) {
-                    if let Some(overlap) = object.overlap(&cell.object) {
-                        hitx = true;
-                        if dx > 0.0 {
-                            object.move_by(-overlap.width, 0.0);
-                        } else {
-                            object.move_by(overlap.width, 0.0);
-                        }
-                    }
-                }
-            }
+    pub fn set_target<S>(&mut self, target: S)
+    where
+        S: Into<Cow<'a, str>>,
+    {
+        self.target = Some(target.into());
+    }
 
-            object.move_by(0.0, dy);
-            if dy != 0.0 {
-                for cell in map.collidable_tiles(&object.rect) {
-                    if let Some(overlap) = object.overlap(&cell.object) {
-                        hity = true;
-                        if dy > 0.0 {
-                            object.move_by(0.0, -overlap.height);
-                        } else {
-                            object.move_by(0.0, overlap.height);
-                        }
-                    }
-                }
-            }
-        }
-
-        if hitx || hity {
-            if let Some(movement) = self.movements.get_mut(&uuid) {
-                movement.reset_speed();
-            }
-        }
+    pub fn get_target_rect(&self) -> Option<Rect<f32>> {
+        Some(
+            self.objects
+                .get(self.names.get(&self.target.clone()?)?)?
+                .rect,
+        )
     }
 }
 

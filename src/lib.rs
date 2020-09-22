@@ -3,7 +3,9 @@ use coffee::Game;
 
 mod assets;
 mod camera;
+mod collision_system;
 mod config;
+mod drawable;
 mod entity;
 mod error;
 mod game;

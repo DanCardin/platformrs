@@ -1,16 +1,17 @@
-use coffee::graphics::{Batch, Color, Frame, Image, Point, Rectangle, Sprite, Window};
+use crate::drawable::Drawable;
+use coffee::graphics::{Batch, Color, Frame, Image, Rectangle, Sprite, Window};
 use coffee::input::KeyboardAndMouse;
 use coffee::load::loading_screen::ProgressBar;
 use coffee::load::Join;
 use coffee::load::Task;
 use coffee::Debug;
 use nalgebra::Vector2;
-use std::borrow::Cow;
 use std::collections::HashMap;
 use uuid::Uuid;
 
 use crate::assets::Assets;
 use crate::camera::Camera;
+use crate::collision_system::CollisionSystem;
 use crate::config::Config;
 use crate::entity::{EntityBuilder, EntityManager};
 use crate::input::{Input, PlayerInput};
@@ -27,6 +28,7 @@ pub struct Platformrs<'a> {
     batch: Batch,
     debug_sheet: Image,
     entity_manager: EntityManager<'a>,
+    collision_system: CollisionSystem,
 }
 
 impl<'a> Game for Platformrs<'a> {
@@ -61,7 +63,7 @@ impl<'a> Game for Platformrs<'a> {
                 ));
 
                 let mut entity_manager = EntityManager::new();
-
+                entity_manager.set_target("player");
                 entity_manager.add(
                     EntityBuilder::new()
                         .with_name("player")
@@ -69,8 +71,8 @@ impl<'a> Game for Platformrs<'a> {
                         .with_object(Object::with_size(48.0, 106.0).at(100.0, 100.0))
                         .with_movement(
                             Movement::new()
-                                .with_max_speed((Some(10.0), Some(20.0)))
-                                .with_force(Vector2::new(0.0, 0.5)),
+                                .with_max_speed((Some(10.0), Some(30.0)))
+                                .with_force(Vector2::new(0.0, 0.7)),
                         )
                         .with_input(Input::Player(PlayerInput::new())),
                 );
@@ -83,12 +85,13 @@ impl<'a> Game for Platformrs<'a> {
                     debug_sheet,
                     batch: Batch::new(spritesheet),
                     entity_manager,
+                    collision_system: CollisionSystem::new(),
                 }
             })
     }
 
     fn interact(&mut self, input: &mut KeyboardAndMouse, _window: &mut Window) {
-        for (uuid, entity_input) in self.entity_manager.get_inputs_mut() {
+        for (_uuid, entity_input) in self.entity_manager.get_inputs_mut() {
             entity_input.update(input);
         }
     }
@@ -107,58 +110,24 @@ impl<'a> Game for Platformrs<'a> {
             }
         }
 
-        for uuid in self.entity_manager.get_entities() {
-            self.entity_manager.update(uuid, &self.map);
-        }
+        self.collision_system
+            .update(&mut self.entity_manager, &self.map);
     }
 
     fn draw(&mut self, frame: &mut Frame, _timer: &coffee::Timer) {
         frame.clear(Color::BLACK);
 
-        for (x, y, cell) in self.map.iter() {
-            let source = *self
-                .assets
-                .offsets
-                .get(cell.get_name().unwrap_or(&Cow::Borrowed("")).as_ref())
-                .unwrap_or(&self.assets.default_offset);
-            self.batch.add(Sprite {
-                source,
-                position: Point::new(
-                    (x * self.config.tilesize) as f32,
-                    (y * self.config.tilesize) as f32,
-                ),
-                scale: (self.config.scale, self.config.scale),
-            });
-        }
-
-        for (uuid, asset) in self.entity_manager.get_assets() {
-            if let Some(object) = self.entity_manager.get_object(uuid) {
-                if !object.visible {
-                    continue;
-                }
-
-                if let Some(offset) = self.assets.offsets.get(&asset) {
-                    self.batch.add(Sprite {
-                        source: *offset,
-                        position: object.rect.point(),
-                        scale: (1.0, 1.0),
-                    });
-                }
-            }
-        }
-
-        let default = Object::with_size(70.0, 70.0);
-        let object = self
-            .entity_manager
-            .get_object(self.entity_manager.by_name("player"))
-            .unwrap_or(&default);
+        self.map.draw(&self.config, &self.assets, &mut self.batch);
+        self.entity_manager
+            .draw(&self.config, &self.assets, &mut self.batch);
 
         self.batch.draw(
-            &mut frame
-                .as_target()
-                .transform(self.camera.update(Some(&object.rect))),
+            &mut frame.as_target().transform(
+                self.camera
+                    .update(self.entity_manager.get_target_rect().as_ref()),
+            ),
         );
-        self.batch.clear();
+        // self.batch.clear();
     }
 
     fn debug(&self, input: &Self::Input, frame: &mut Frame<'_>, debug: &mut Debug) {
@@ -171,16 +140,7 @@ impl<'a> Game for Platformrs<'a> {
             .unwrap_or(&default);
 
         for cell in self.map.collidable_tiles(&player.rect) {
-            batch.add(Sprite {
-                source: Rectangle {
-                    x: 0,
-                    y: 0,
-                    width: 70,
-                    height: 70,
-                },
-                position: cell.get_rect().point(),
-                scale: (1.0, 1.0),
-            });
+            // self.map.debug(&self.config, &self.assets, &mut self.batch);
 
             if let Some(overlap) = player.overlap(&cell.object) {
                 batch.add(Sprite {
